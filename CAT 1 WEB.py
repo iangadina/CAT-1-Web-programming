@@ -33,6 +33,7 @@ def replace_b_with_B():#this is the funtion for replacing b with B before sortin
                                         f.write(replaced)
         file.close()
 replace_b_with_B()
+"""QUESTION 2"""
 def csc_217_Seperated():#ths the function for sepparating the two files
 	file=open("CSC_217_attendance_week1.txt","r")
 	Comp_members=[i for i in file if "B135" in i]
@@ -48,8 +49,7 @@ def csc_217_Seperated():#ths the function for sepparating the two files
 	for i in IT_members:
 		file.write(i)
 	file.close()
-"""QUESTION 2"""
-csc_217_Seperated()
+csc_217_Seperated()#This function spaces 2019 with the name so as it can be indexed and formated
 def spacingcomp():
 	file=open("CSC_217_Computer.txt","r")
 	spaces=[file.read()]
@@ -70,7 +70,7 @@ def spacingit():
 		file.write(i)
 spacingit()
 """QUESTION 3 i"""
-def csc_217_Computer():
+def csc_217_Computer():#This function orders Computer in terms of admission number being the first 
 	file=open("CSC_217_Computer.txt","r")
 	f=open("copy.txt","w")
 	formated=[i for i in file]
@@ -93,7 +93,7 @@ def csc_217_Computer():
 	file.close()
 csc_217_Computer()
 """QUESTION 3 ii"""
-def csc_217_IT():
+def csc_217_IT():#This function orders IT in terms of admission number being the first
 	file=open("CSC_217_IT.txt","r")
 	f=open("copy.txt","w")
 	formated=[i for i in file]
